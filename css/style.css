@@ -379,13 +379,13 @@ footer div div ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 40px;
     flex-direction: column;
     margin: 40px;
 }
 .proximamente img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+
 }
 
 
@@ -447,7 +447,7 @@ footer div div ul li {
 }
 
 
-/*?--ESPECIFICO VENDIMIA--*/
+/*?--ESPECIFICO REGVENDIMIA--*/
 
 .regvendimia1 {
     display: flex;
@@ -497,12 +497,13 @@ footer div div ul li {
 
 .deseasanotarte {
     font-size: 40px;
+    margin: 20px;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin: 20px;
 }
 .contactaremos {
     margin: 10px;
@@ -565,6 +566,7 @@ footer div div ul li {
     .mapa{
         display: none;
     }
+
 }
 
 @media screen and (max-width:800px){
@@ -741,6 +743,139 @@ footer div div ul li {
     }
     .logofooter{
     display: none;
+    }
+}
+
+/*?--MEDIAS Q Nosotros --*/ 
+@media screen and (max-width:850px){
+    .nuestra {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .dondevamos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:580px){
+    .nuestra div img{
+        width: 300px;
+    }
+    .dondevamos div img{
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+/*?--MEDIAS Q Terroir --*/ 
+@media screen and (max-width:950px){
+    .terroir1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .terroir2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px;
+    }
+  
+    .terroir3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:610px){
+    .terroir1 img{
+        width: 300px;
+    }
+
+    .terroir2 img{
+        height: 200px;
+    }
+  
+    .terroir3 img{
+        width: 300px;
+    }
+}
+/*?--MEDIAS Q Contacto --*/ 
+@media screen and (max-width:860px){
+    .contactoesp{
+        flex-direction: column;
+    }
+    .contactoesp div h2{
+        margin: 20px;
+        padding: 20px;
+    }
+    .contactoesp div form{
+        margin: 20px;
+    }
+}
+/*?--MEDIAS Q Regvendimia --*/ 
+@media screen and (max-width:1200px){
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .notshow{
+        display: none;
+    }
+}
+@media screen and (max-width:850px){
+    .regvendimia1 {
+        flex-direction: column;
+    }
+    .imgcolores{
+        display: none;
+    }
+    .regvendimia2 {
+        flex-direction: column;
+    }
+    .regvendimia3 {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:540px){
+    .regvendimia3 div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+    }
+}
+/*?--MEDIAS Q Recibimos --*/ 
+@media screen and (max-width:720px){
+    .pagrecibimos{
+        flex-direction: column;
+    }
+    .pagrecibimos div img {
+        width: 300px;
+    }
+}
+
+/*?--MEDIAS Q Reservasgyv --*/ 
+@media screen and (max-width:1075px){
+    .contactoesp div img{
+        width: 300px;
     }
 }
 
