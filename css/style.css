@@ -395,7 +395,7 @@ footer div div ul li {
 .contactoesp {
     display: flex;
     align-items: center;
-    margin: 15px;
+    margin: 20px;
     padding: 20px;
     justify-content: center;
 
@@ -886,6 +886,9 @@ footer div div ul li {
 @media screen and (max-width:1075px){
     .contactoesp div img{
         width: 300px;
+    }
+    .contactoesp{ 
+        margin: 10px;
     }
 }
 
