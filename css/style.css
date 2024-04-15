@@ -744,7 +744,13 @@ footer div div ul li {
     .logofooter{
     display: none;
     }
+    .grid-container{
+        grid-template-rows: 1fr; 
+        grid-template-columns: 340px;
+        gap: 20px;
+    }
 }
+
 
 /*?--MEDIAS Q Nosotros --*/ 
 @media screen and (max-width:850px){
@@ -822,6 +828,10 @@ footer div div ul li {
     }
     .contactoesp div form{
         margin: 20px;
+    }
+    .mensaje input {
+        width: 200px;
+        height: 100px;
     }
 }
 /*?--MEDIAS Q Regvendimia --*/ 
