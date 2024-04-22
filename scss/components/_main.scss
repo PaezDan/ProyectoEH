@@ -1,0 +1,107 @@
+.hero{
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px;
+    margin: 20px;
+    div{
+        img{
+            height: 400px;
+            margin: 10px;
+        }
+    }
+}
+.nuestrahistoria{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a{
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    div{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 40px;
+        border: 5px solid rgb(0, 0, 0);
+        padding: 15px;
+        list-style: none;
+        text-decoration: none;
+        margin: 10px;
+        h2{
+            font-size: 40px;
+            margin: 10px;
+            padding: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img{
+            margin: 20px;
+            height: 400px;
+            padding: 10px;
+        }
+        li{
+            a{
+                font-size: 15px;
+                margin: 10px;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 15px;
+                border: 1px solid rgb(0, 0, 0);
+                background-color: black;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.vendimia{
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px;
+    margin: 20px;
+    div{
+        display: flex;
+        justify-content: space-between ;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            font-size: 50px;
+            margin: 20px;
+            padding: 15px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a{
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid rgb(0, 0, 0);
+            text-decoration: none;
+            color: white;
+            background-color: black;
+        }
+    }
+}

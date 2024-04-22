@@ -1,0 +1,37 @@
+header{
+    background-color: black;
+    display: flex;
+    color: whitesmoke;
+    font-size: 80px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 10px;
+    div{
+        a{
+            img{
+                width: 150px;
+            }
+        }
+
+    }
+    div{
+        h1{
+            color: whitesmoke;
+            font-size: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 1800;
+            padding: 35px;
+        }
+    }
+}
+.navbar{
+    border-radius: 20px;
+    margin: 10px;
+    padding: 3px;
+}
+.navbar-nav a{
+    color: white;
+    display: flex;
+}

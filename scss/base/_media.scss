@@ -1,0 +1,360 @@
+/*?--MEDIAS Q Galeria --*/ 
+@media screen and (max-width:1160px){
+
+    .grid-container{
+    border: solid 4px black;
+    margin: 5px;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-columns: 500px 500px;
+    gap: 20px;
+    }
+
+    .grid-items{
+    border:solid 2px black;
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    }
+
+    .galeria1 img{
+    height: 500px;
+    width: 350px;
+    }
+
+    .gridho{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+
+    .gridho2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    }
+
+    .ho1 img{
+    height: 300px;
+    width: 500px;
+    }
+}
+
+@media screen and (max-width:1037px){
+
+    .grid-container{
+        border: solid 4px black;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 350px 350px;
+        gap: 20px;
+    }
+    
+    .grid-items{
+        border:solid 2px black;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .galeria1 img{
+        height: 300px;
+        width: 200px;
+    }
+    
+    .gridho{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .gridho2{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .ho1 img{
+        height: 300px;
+        width: 500px;
+    }
+    .mapgal{
+        display: none;
+    }
+    }
+
+@media screen and (max-width:730px){
+    .grid-container{
+        border: solid 4px black;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 1fr; 
+        grid-template-columns: 400px;
+        gap: 20px;
+    }
+        
+    .grid-items{
+        border:solid 2px black;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+        margin: 10px;
+    }
+        
+    .galeria1 img{
+        height: 300px;
+        width: 200px;
+    }
+        
+    .gridho{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+        
+    .gridho2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+        
+    .ho1 img{
+        height: 150px;
+        width: 250px;
+    }
+    .mapgal{
+        display: none;
+    }
+}
+@media screen and (max-width:540px){
+    header div h1 {
+    font-size: 30px;
+    }
+    .logofooter{
+    display: none;
+    }
+    .grid-container{
+        grid-template-rows: 1fr; 
+        grid-template-columns: 340px;
+        gap: 20px;
+    }
+}
+
+/*?--MEDIAS Q Nosotros --*/ 
+@media screen and (max-width:850px){
+    .nuestra {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .dondevamos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:580px){
+    .nuestra div img{
+        width: 300px;
+    }
+    .dondevamos div img{
+        width: 300px;
+        margin: 20px;
+    }
+}
+
+/*?--MEDIAS Q Terroir --*/ 
+@media screen and (max-width:950px){
+    .terroir1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .terroir2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px;
+    }
+  
+    .terroir3 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 20px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:610px){
+    .terroir1 img{
+        width: 300px;
+    }
+
+    .terroir2 img{
+        height: 200px;
+    }
+  
+    .terroir3 img{
+        width: 300px;
+    }
+}
+
+/*?--MEDIAS Q Contacto --*/ 
+@media screen and (max-width:860px){
+    .contactoesp{
+        flex-direction: column;
+    }
+    .contactoesp div form div{
+        flex-direction: column;
+    }
+    .contactoesp div form div{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactoesp div h2{
+        margin: 20px;
+        padding: 20px;
+    }
+    .contactoesp div form{
+        margin: 20px;
+    }
+    .mensaje input {
+        width: 200px;
+        height: 100px;
+    }
+}
+
+/*?--MEDIAS Q Regvendimia --*/ 
+@media screen and (max-width:1200px){
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .regvendimia1 div img{
+        width: 300px;
+    }
+    .notshow{
+        display: none;
+    }
+}
+@media screen and (max-width:850px){
+    .regvendimia1 {
+        flex-direction: column;
+    }
+    .imgcolores{
+        display: none;
+    }
+    .regvendimia2 {
+        flex-direction: column;
+    }
+    .regvendimia3 {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:540px){
+    .regvendimia3 div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+    }
+}
+
+/*?--MEDIAS Q Recibimos --*/ 
+@media screen and (max-width:720px){
+    .pagrecibimos{
+        flex-direction: column;
+    }
+    .pagrecibimos div img {
+        width: 300px;
+    }
+}
+
+/*?--MEDIAS Q Reservasgyv --*/ 
+@media screen and (max-width:1075px){
+    .contactoesp div img{
+        width: 300px;
+    }
+    .contactoesp{ 
+        margin: 10px;
+    }
+}
+
+/*?--MEDIAS Q INDEX --*/ 
+@media screen and (max-width:981px){
+    .mapa{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px){
+    .imgvendimia{
+        display: none;
+    }
+    .listafoot2{
+        display: none;
+    }  
+    .parrafonuestra2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:732px){
+    .hero { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .hero div img {
+        height: 300px;
+        margin: 10px;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tarjetas div img {
+        margin: 20px;
+        height: 300px;
+        padding: 10px;
+    }
+}   
+
+/*?--MEDIAS Q FAQ --*/ 
+@media screen and (max-width:650px){
+    .faq1 div p{
+        font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .faq1 div h2{
+        font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .faq2 div ol li{
+        font-size: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .faq2 div ol p{
+        font-size: 10px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .faq2 div h2{
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
