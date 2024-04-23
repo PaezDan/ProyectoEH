@@ -36,28 +36,28 @@ header {
 .hero {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  margin: 20px; }
+  padding: 15px;
+  margin: 10px; }
   .hero div img {
     height: 400px;
     margin: 10px; }
 
 .nuestrahistoria {
-  margin: 10px;
-  padding: 20px;
+  margin: 5px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
   .nuestrahistoria h2 {
-    font-size: 50px;
-    margin: 10px;
-    padding: 10px;
+    font-size: 40px;
+    margin: 5px;
+    padding: 5px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   .nuestrahistoria a {
     font-size: 20px;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 15px;
     border: 1px solid black;
     background-color: black;
@@ -82,18 +82,18 @@ header {
     text-decoration: none;
     margin: 10px; }
     .tarjetas div h2 {
-      font-size: 40px;
-      margin: 10px;
-      padding: 10px;
+      font-size: 30px;
+      margin: 5px;
+      padding: 5px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
     .tarjetas div img {
-      margin: 20px;
+      margin: 5px;
       height: 400px;
       padding: 10px; }
     .tarjetas div li a {
       font-size: 15px;
-      margin: 10px;
-      padding: 10px;
+      margin: 5px;
+      padding: 5px;
       text-decoration: none;
       border-radius: 15px;
       border: 1px solid black;
@@ -104,27 +104,31 @@ header {
 .vendimia {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  margin: 20px; }
+  padding: 15px;
+  margin: 5px; }
   .vendimia div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center; }
     .vendimia div h3 {
-      font-size: 50px;
-      margin: 20px;
+      font-size: 40px;
+      margin: 5px;
       padding: 15px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
     .vendimia div a {
       font-size: 20px;
-      margin: 10px;
+      margin: 5px;
       padding: 10px;
       border-radius: 15px;
       border: 1px solid black;
       text-decoration: none;
       color: white;
       background-color: black; }
+
+.imgvendimia {
+  margin: 5px;
+  padding: 10px; }
 
 footer {
   background-color: black;
@@ -532,6 +536,22 @@ footer {
 @media screen and (max-width: 540px) {
   header div h1 {
     font-size: 30px; }
+  .hero div h2 {
+    font-size: 20px; }
+  .hero div p {
+    font-size: 15px; }
+  .hero div a {
+    font-size: 10px; }
+  .tarjetas div h2 {
+    font-size: 20px; }
+  .tarjetas div li a {
+    font-size: 10px; }
+  .vendimia div h3 {
+    font-size: 20px; }
+  .vendimia div p {
+    font-size: 15px; }
+  .vendimia div a {
+    font-size: 10px; }
   .logofooter {
     display: none; }
   .grid-container {
