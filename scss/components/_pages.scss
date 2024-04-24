@@ -5,16 +5,16 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row-reverse;
-    margin: 20px;
+    margin: 10px;
     div{
         h2{
             font-size: 50px;
-            margin: 20px;
+            margin-left: 30px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         p{
-            margin: 40px;
-            padding: 30px;
+            margin: 15px;
+            padding: 15px;
         }
     }
 }
@@ -22,16 +22,16 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 20px;
+    margin: 10px;
     div{
         h2{
             font-size: 50px;
-            margin: 20px;
+            margin-left:  30px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         p{
-            margin: 40px;
-            padding: 30px;
+            margin: 10px;
+            padding: 10px;
         }
     }
 }
@@ -49,15 +49,15 @@
 .terroir1{
     h2{
         font-size: 50px;
-        margin: 20px;
+        margin: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
 .terroir1{
     p {
-        margin: 40px;
-        padding: 30px;
+        margin: 20px;
+        padding: 15px;
     }
 }
 
@@ -78,8 +78,8 @@
 
 .terroir2{
     p{
-        margin: 40px;
-        adding: 30px;
+        margin: 20px;
+        padding: 15px;
     }
 }
 
@@ -93,16 +93,16 @@
 
 .terroir3{
     h2{
-        ont-size: 50px;
-        margin: 20px;
+        font-size: 50px;
+        margin: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 }
 
 .terroir3{
     p{
-        margin: 40px;
-        padding: 30px;
+        margin: 20px;
+        padding: 15px;
     }
 }
 
@@ -113,12 +113,14 @@
     margin: 50px;
 }
 
-.faq1 div {
-    border-radius: 40px;
-    border: 1px solid rgb(0, 0, 0); height: 300; width: 300;
-    padding: 50px;
-    Margin: 40px;
-    padding: 20px;
+.faq1{
+    div{
+        border-radius: 40px;
+        border: 1px solid rgb(0, 0, 0); height: 300; width: 300;
+        padding: 50px;
+        Margin: 40px;
+        padding: 20px;
+    }
 }
 
 .faq2 {
@@ -127,30 +129,39 @@
     padding: 20px;
     Margin: 30px;
 }
-.faq2 div {
-    margin: 50px;
+.faq2{
+    div{
+        margin: 50px;
+    }
 }
 
 // ESPECIFICO TIENDA
 
 
-.listaproductos div {
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 5px solid rgb(0, 0, 0);
-    padding: 30px;
-    margin: 20px;
-    list-style: none;
-    text-decoration: none;
-    border-radius: 40px;
-    flex-wrap: wrap;
+.listaproductos{
+    div {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 5px solid rgb(0, 0, 0);
+        padding: 15px;
+        margin: 10px;
+        list-style: none;
+        text-decoration: none;
+        border-radius: 40px;
+        flex-wrap: wrap;
+    }
 }
 
-.listaproductos div img {
-    height: 300px;
+.listaproductos{   
+    div{
+        img{
+            margin: 5px;
+            height: 300px;
+        }
+    }
 }
 .listaproductos {
     display: flex;
@@ -160,22 +171,30 @@
     margin: 10px;
 }
 
-.listaproductos li a {
-    text-decoration: none;
-    font-size: 20px;
-    color: black;
-    margin: 20px;
+.listaproductos{
+    li{
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            margin: 20px;
+        }
+    }
 }
 
-.listaproductos li {
-    border-radius: 40px;
-    border: 5px solid rgb(0, 0, 0);
-    margin: 10px;
+.listaproductos{
+    li {
+        border-radius: 40px;
+        border: 5px solid rgb(0, 0, 0);
+        margin: 10px;
+    }
 }
 
-.listaproductos h2 {
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.listaproductos{
+    h2{
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
 // ESPECIFICO COMPRA
@@ -188,8 +207,10 @@
     flex-direction: column;
     margin: 40px;
 }
-.proximamente img {
-    width: 300px;
+.proximamente{
+    img {
+        width: 300px;
+    }
 }
 
 /*?--ESPECIFICO CONTACTO--*/
@@ -197,19 +218,25 @@
 .contactoesp {
     display: flex;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
 
 }
-.contactoesp div{
-    margin: 20px;
+.contactoesp{
+    div{
+        margin: 10px;
+    }
 }
 
-.mensaje input {
-    width: 400px;
-    height: 200px;
+.mensaje{
+    input {
+        width: 400px;
+        height: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 .enviarcontact {
@@ -218,17 +245,19 @@
     justify-content: center;
     margin: 5px;
 }
-.enviarcontact a {
-    font-size: 30px;
-    margin: 5px;
-    padding: 20px;
-    border-radius: 40px;
-    border: 1px solid rgb(0, 0, 0);
-    text-decoration: none;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    margin: 20px;
+.enviarcontact{
+    a {
+        font-size: 30px;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px solid rgb(0, 0, 0);
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        text-decoration: none;
+        margin: 20px;
+    }
 }
 
 /*!--ESPECIFICO RECIBIMOS--*/
@@ -239,14 +268,18 @@
     justify-content: space-around;
     margin: 50px;
 }
-.textorecibimos h2 {
-    font-size: 50px;
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.textorecibimos{
+    h2 {
+        font-size: 50px;
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
-.textorecibimos p{
-    font-size: 25px;
-    margin: 20px;
+.textorecibimos{
+    p{
+        font-size: 25px;
+        margin: 20px;
+    }
 }
 
 /*?--ESPECIFICO REGVENDIMIA--*/
@@ -256,18 +289,24 @@
     align-items: center;
     justify-content: space-around;
 }
-.regvendimia1 div {
-    margin: 20px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.regvendimia1{
+    div {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
-.regvendimia1 div h2 {
-    margin: 20px;
-    font-size: 60px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.regvendimia1{
+    div{
+        h2{
+            margin: 10px;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
 }
 
 .regvendimia2 {
@@ -275,87 +314,105 @@
     align-items: center;
     justify-content: space-around;
 }
-.regvendimia2 div {
-    margin: 20px;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.regvendimia2{
+    div {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
-.regvendimia2 div h2 {
-    margin: 20px;
-    font-size: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.regvendimia2{
+    div{
+        h2 {
+            margin: 10px;
+            font-size: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    }
 }
 
 .regvendimia3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 5px;
+    margin: 10px;
 }
 
 
-.deseasanotarte {
-    font-size: 40px;
-    margin: 20px;
+.deseasanotarte{
+    h2{
+        font-size: 40px;
+        margin-left: 20px;
+    }
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-left: 20px;
 }
 .contactaremos {
-    margin: 10px;
+    margin-right: 20px;
 }
 
-.seguidorwht a img {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
+.seguidorwht{
+    a{
+        img {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+        }
+    }
 }
 
 /*?--ESPECIFICO GALERIA--*/
 
 .grid-container{
     border: solid 4px black;
-    margin: 5px;
+    margin: 10px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr; 
-    grid-template-columns: 375px 375px 375px;
+    justify-items: center;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-}
+}   
 
 .grid-items{
     border:solid 2px black;
     font-size: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     margin: 10px;
 }
 
-.galeria1 img{
-    height: 300px;
-    width: 200px;
+.galeria1{
+    img{
+        height: 270px;
+        width: 220px;
+    }
 }
 
 .gridho{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
 .gridho2{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-.ho1 img{
-    height: 300px;
-    width: 500px;
+.ho1{
+    img{
+        height: 300px;
+        width: 500px;
+    }
 }
 
 

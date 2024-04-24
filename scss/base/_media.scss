@@ -1,115 +1,35 @@
 /*?--MEDIAS Q Galeria --*/ 
-@media screen and (max-width:1160px){
-
+@media screen and (max-width:950px){
     .grid-container{
-    border: solid 4px black;
-    margin: 5px;
-    display: grid;
-    grid-template-rows: 1fr 1fr; 
-    grid-template-columns: 500px 500px;
-    gap: 20px;
-    }
-
-    .grid-items{
-    border:solid 2px black;
-    font-size: 10px;
-    padding: 10px;
-    text-align: center;
-    margin: 10px;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 250px 250px 250px 250px 250px 250px;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .galeria1{
         img{
-            height: 500px;
-            width: 350px;
+            height: 200px;
+            width: 150px;
         }
     }
-
-    .gridho{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    }
-
-    .gridho2{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    }
-
-    .mapgal{
-        display: none;
-    }
-
     .ho1{
         img{
-        height: 300px;
-        width: 500px;
+        height: 180px;
+        width: 300px;
+        }
     }
 }
 
-@media screen and (max-width:1037px){
-
-    .grid-container{
-        border: solid 4px black;
-        margin: 5px;
-        display: grid;
-        grid-template-rows: 1fr 1fr; 
-        grid-template-columns: 350px 350px;
-        gap: 20px;
-    }
-    
-    .grid-items{
-        border:solid 2px black;
-        font-size: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
-    }
-    
-    .galeria1{ 
-        img{
-            height: 300px;
-            width: 200px;
-        }
-    }
-    
-    .gridho{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    
-    .gridho2{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    
-    .ho1{
-        img{
-            height: 300px;
-            width: 500px;
-        }
-    }
-
-    .listafoot2{
-        display: none;
-    }
-}    
 
 @media screen and (max-width:730px){
     .grid-container{
         border: solid 4px black;
         margin: 5px;
         display: grid;
-        grid-template-rows: 1fr; 
-        grid-template-columns: 400px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
-    }
-        
-    .grid-items{
-        border:solid 2px black;
-        font-size: 10px;
-        padding: 10px;
-        text-align: center;
-        margin: 10px;
     }
         
     .galeria1{
@@ -120,8 +40,8 @@
     }
         
     .gridho{
-        grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
     }
         
     .gridho2{
@@ -133,16 +53,48 @@
         img{
             height: 150px;
             width: 250px;
+            margin-top: 50px;
         }
     }
 }
 
 @media screen and (max-width:700px){
+    .grid-container{
+        border: solid 4px black;
+        margin: 5px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .gridho{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+        
+    .gridho2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .ho1{
+        img{
+            height: 150px;
+            width: 250px;
+            margin-top: 10px;
+        }
+    }
+}
+
+// ESPECIFICO LOGO INDEX ADICIONALES //
+
+@media screen and (max-width:390px){
 
     .logofooter{
         display: none;
     }
 }
+
 
 @media screen and (max-width:540px){
     header{ 
@@ -210,65 +162,131 @@
             }
         }
     }
-
-    .lista1{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        flex-direction: column;
-    }
-
-    .grid-container{
-        grid-template-rows: 1fr; 
-        grid-template-columns: 340px;
-        gap: 20px;
-    }
 }
 
 /*?--MEDIAS Q Nosotros --*/ 
-@media screen and (max-width:850px){
+@media screen and (max-width:965px){
+    .nuestra{
+        div{
+            h2{
+                font-size: 25px;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            p{
+                margin: 15px;
+                padding: 15px;
+                font-size: 12px;
+            }
+        }
+    }
+    .nuestra{
+        div{
+            img{
+            width: 250px;
+            }
+        }
+    }
+    .dondevamos{
+        div{
+            img{
+                width: 300px;
+            }
+        }
+    }
+    .dondevamos{
+        div{
+            h2{
+                font-size: 25px;
+                margin-left: 20px;
+                margin-top: 10px;
+            }
+            p{
+                margin: 15px;
+                padding: 15px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){    
+    .dondevamos{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:600px){
     .nuestra{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-items: center;
+        margin: 10px;
     }
+}
     
-    .dondevamos{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-}
-@media screen and (max-width:580px){
-    .nuestra{
-        div{
-            img{
-                width: 300px;
-            }
-        }
-    }
-    .dondevamos{
-        div{
-            img{
-                width: 300px;
-                margin: 20px;
-            }
-        }
-    }
-}
 
 /*?--MEDIAS Q Terroir --*/ 
-@media screen and (max-width:950px){
+@media screen and (max-width:1100px){
     .terroir1{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        margin: 20px;
+        div{
+            img{
+                margin: 10px;
+                width: 300px;
+            }
+            h2{
+                font-size: 30px;
+                margin: 10px;
+            }
+            p{
+                font-size: 15px;
+                margin: 5px;
+            }
+        }
     }
+    .terroir2{
+        div{
+            img{
+                margin: 10px;
+                width: 400px;
+                height: 250px;
+            }
+            h2{
+                font-size: 30px;
+                margin: 10px;
+            }
+            p{
+                font-size: 15px;
+                margin: 5px;
+            }
+        }
+    }
+    .terroir3{
+        div{
+            img{
+                margin: 10px;
+                width: 300px;
+                height: 400px;
+            }
+            h2{
+                font-size: 30px;
+                margin: 10px;
+            }
+            p{
+                font-size: 15px;
+                margin: 5px;
+            }
+        }    
+    }
+}
 
+
+
+
+@media screen and (max-width:850px){
     .terroir2{
         display: flex;
         align-items: center;
@@ -276,6 +294,19 @@
         flex-direction: column;
         margin: 20px;
     }
+}
+
+@media screen and (max-width:800px){
+    .terroir1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:700px){
     .terroir3{
         display: flex;
         align-items: center;
@@ -284,22 +315,63 @@
         flex-direction: column;
     }
 }
-@media screen and (max-width:610px){
+
+@media screen and (max-width:600px){
     .terroir1{
-        img{
-            width: 300px;
+        div{
+            h2{
+                font-size: 30px;
+                margin: 5px;
+            }
+            p{
+                font-size: 12px;
+                margin: 5px;
+            }
         }
     }
-
     .terroir2{
-        img{
-            height: 200px;
+        div{
+            h2{
+                font-size: 30px;
+                margin: 5px;
+            }
+            p{
+                font-size: 12px;
+                margin: 5px;
+            }
         }
     }
-
     .terroir3{
-        img{
-            width: 300px;
+        div{
+            h2{
+                font-size: 30px;
+                margin: 5px;
+            }
+            p{
+                font-size: 12px;
+                margin: 5px;
+            }
+        }    
+    }
+}
+
+@media screen and (max-width:450px){
+    .terroir2{
+        div{
+            img{
+                margin: 5px;
+                width: 300px;
+                height: 175px;
+            }
+        }
+    }
+    .terroir3{
+        div{
+            img{
+                margin: 5px;
+                width: 200px;
+                height: 250px;
+            }
         }
     }
 }
@@ -331,15 +403,15 @@
     .contactoesp{
         div{
             h2{
-                margin: 20px;
-                padding: 20px;
+                margin: 10px;
+                padding: 10px;
             }
         }
     }
     .contactoesp{
         div{
             form{
-                margin: 20px;
+                margin: 10px;
             }
         }
     }
@@ -355,6 +427,9 @@
 @media screen and (max-width:1200px){
     .regvendimia1{
         div{
+            p{
+                font-size: 15px;
+            }
             img{
                 width: 300px;
             }
@@ -374,16 +449,37 @@
             }
         }
     }
-    .notshow{
+    .regvendimia2{
+        div{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .regvendimia3{
+        div{
+            form{
+                div{
+                    label{
+                        font-size: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and (max-width:1050px){
+    .notfoto1{
         display: none;
     }
 }
-@media screen and (max-width:850px){
+
+
+
+@media screen and (max-width:660px){
     .regvendimia1{
         flex-direction: column;
-    }
-    .imgcolores{
-        display: none;
     }
     .regvendimia2{
         flex-direction: column;
@@ -391,23 +487,38 @@
     .regvendimia3{
         flex-direction: column;
     }
-}
-@media screen and (max-width:540px){
-    .regvendimia3{
-        div {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 10px;
-            margin: 20px;
-        }
+    .imgcolores{
+        display: none;
     }
 }
 
+@media screen and (max-width:540px){
+    .deseasanotarte{
+        form{
+            div{
+                label{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+
+}
+
+
 /*?--MEDIAS Q Recibimos --*/ 
+
 @media screen and (max-width:720px){
     .pagrecibimos{
         flex-direction: column;
+    }
+    .textorecibimos{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 18px;
+        }
     }
     .pagrecibimos{
         div{
@@ -533,4 +644,13 @@
         }
     }
 }
+@media screen and (max-width:1160px){
+    .mapgal{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    .listafoot2{
+        display: none;
+    }
 }

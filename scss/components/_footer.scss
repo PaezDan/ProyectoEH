@@ -12,21 +12,24 @@ footer{
         margin: 5px;
         padding: 5px;
         div{
-            a{
-                img{
-                    width: 200px;
-                    height: 200px;
-                }
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+                margin: 5px;
+                padding: 5px;
             }
         }
         div{
             ul{
                 li{
-                    margin: 5px;
+                    margin: 10px;
                     a{
                         color: white;
                         text-decoration: none;
-                        margin: 20px;
+                        margin: 5px;
                     }
                 }
             }
@@ -41,3 +44,24 @@ footer{
         }
     }
 }
+.logofooter{
+    a{
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }   
+}
+.lista1{
+    div{
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}
+   
