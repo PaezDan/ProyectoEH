@@ -46,14 +46,19 @@
     margin: 20px;
 }
 
-.terroir1 h2 {
-    font-size: 50px;
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.terroir1{
+    h2{
+        font-size: 50px;
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
-.terroir1 p {
-    margin: 40px;
-    padding: 30px;
+
+.terroir1{
+    p {
+        margin: 40px;
+        padding: 30px;
+    }
 }
 
 .terroir2 {
@@ -63,17 +68,22 @@
     margin: 20px;
 }
 
-.terroir2 h2 {
-    font-size: 50px;
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.terroir2 p {
-    margin: 40px;
-    padding: 30px;
+.terroir2{
+    h2{
+        font-size: 50px;
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
 
-.terroir3 {
+.terroir2{
+    p{
+        margin: 40px;
+        adding: 30px;
+    }
+}
+
+.terroir3{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -81,14 +91,19 @@
     flex-direction: row-reverse;
 }
 
-.terroir3 h2 {
-    font-size: 50px;
-    margin: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.terroir3{
+    h2{
+        ont-size: 50px;
+        margin: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
 }
-.terroir3 p {
-    margin: 40px;
-    padding: 30px;
+
+.terroir3{
+    p{
+        margin: 40px;
+        padding: 30px;
+    }
 }
 
 // ESPECIFICO FAQ

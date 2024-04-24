@@ -18,9 +18,11 @@
     margin: 10px;
     }
 
-    .galeria1 img{
-    height: 500px;
-    width: 350px;
+    .galeria1{
+        img{
+            height: 500px;
+            width: 350px;
+        }
     }
 
     .gridho{
@@ -33,9 +35,14 @@
     grid-column-end: 3;
     }
 
-    .ho1 img{
-    height: 300px;
-    width: 500px;
+    .mapgal{
+        display: none;
+    }
+
+    .ho1{
+        img{
+        height: 300px;
+        width: 500px;
     }
 }
 
@@ -58,9 +65,11 @@
         margin: 10px;
     }
     
-    .galeria1 img{
-        height: 300px;
-        width: 200px;
+    .galeria1{ 
+        img{
+            height: 300px;
+            width: 200px;
+        }
     }
     
     .gridho{
@@ -73,14 +82,17 @@
         grid-column-end: 3;
     }
     
-    .ho1 img{
-        height: 300px;
-        width: 500px;
+    .ho1{
+        img{
+            height: 300px;
+            width: 500px;
+        }
     }
-    .mapgal{
+
+    .listafoot2{
         display: none;
     }
-    }
+}    
 
 @media screen and (max-width:730px){
     .grid-container{
@@ -100,9 +112,11 @@
         margin: 10px;
     }
         
-    .galeria1 img{
-        height: 300px;
-        width: 200px;
+    .galeria1{
+        img{
+            height: 300px;
+            width: 200px;
+        }
     }
         
     .gridho{
@@ -115,45 +129,95 @@
         grid-column-end: 2;
     }
         
-    .ho1 img{
-        height: 150px;
-        width: 250px;
+    .ho1{
+        img{
+            height: 150px;
+            width: 250px;
+        }
     }
-    .mapgal{
+}
+
+@media screen and (max-width:700px){
+
+    .logofooter{
         display: none;
     }
 }
+
 @media screen and (max-width:540px){
-    header div h1 {
-    font-size: 30px;
+    header{ 
+        div{
+            h1 {
+                font-size: 30px;
+            }
+        }
     }
-    .hero div h2{
-    font-size: 20px;
+    .hero{
+        div{ 
+            h2{
+                font-size: 20px;
+            }
+        }
     }
-    .hero div p{
-    font-size: 15px;
+    .hero{ 
+        div{ 
+            p{
+                font-size: 15px;
+            }
+        }
     }
-    .hero div a{
-    font-size: 10px;
+    .hero{
+        div{
+            a{
+                font-size: 10px;
+            }
+        }
     }
-    .tarjetas div h2{
-    font-size: 20px; 
+    .tarjetas{
+        div{ 
+            h2{
+                font-size: 20px;
+            }
+        }
     }
-    .tarjetas div li a{
-    font-size: 10px; 
+    .tarjetas{
+        div{
+            li{
+                a{
+                    font-size: 10px; 
+                }
+            }
+        }
     }
-    .vendimia div h3{
-    font-size: 20px;
+    .vendimia{
+        div{
+            h3{
+                font-size: 20px;
+            }
+        }
     }
-    .vendimia div p{
-    font-size: 15px;
+    .vendimia{
+        div{
+            p{
+                font-size: 15px;
+            }
+        }
     }
-    .vendimia div a{
-    font-size: 10px;   
+    .vendimia{
+        div{
+            a{
+                font-size: 10px;   
+            }
+        }
     }
-    .logofooter{
-    display: none;
+
+    .lista1{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-direction: column;
     }
+
     .grid-container{
         grid-template-rows: 1fr; 
         grid-template-columns: 340px;
@@ -163,14 +227,14 @@
 
 /*?--MEDIAS Q Nosotros --*/ 
 @media screen and (max-width:850px){
-    .nuestra {
+    .nuestra{
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-items: center;
     }
     
-    .dondevamos {
+    .dondevamos{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -178,18 +242,26 @@
     }
 }
 @media screen and (max-width:580px){
-    .nuestra div img{
-        width: 300px;
+    .nuestra{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
-    .dondevamos div img{
-        width: 300px;
-        margin: 20px;
+    .dondevamos{
+        div{
+            img{
+                width: 300px;
+                margin: 20px;
+            }
+        }
     }
 }
 
 /*?--MEDIAS Q Terroir --*/ 
 @media screen and (max-width:950px){
-    .terroir1 {
+    .terroir1{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -197,15 +269,14 @@
         margin: 20px;
     }
 
-    .terroir2 {
+    .terroir2{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-direction: column;
         margin: 20px;
     }
-  
-    .terroir3 {
+    .terroir3{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -214,16 +285,22 @@
     }
 }
 @media screen and (max-width:610px){
-    .terroir1 img{
-        width: 300px;
+    .terroir1{
+        img{
+            width: 300px;
+        }
     }
 
-    .terroir2 img{
-        height: 200px;
+    .terroir2{
+        img{
+            height: 200px;
+        }
     }
-  
-    .terroir3 img{
-        width: 300px;
+
+    .terroir3{
+        img{
+            width: 300px;
+        }
     }
 }
 
@@ -232,62 +309,98 @@
     .contactoesp{
         flex-direction: column;
     }
-    .contactoesp div form div{
-        flex-direction: column;
+    .contactoesp{
+        div{
+            form{
+                div{
+                    flex-direction: column;
+                }
+            }
+        }
     }
-    .contactoesp div form div{
-        display: flex;
-        flex-direction: column;
+    .contactoesp{
+        div{
+            form{
+                div{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
     }
-    .contactoesp div h2{
-        margin: 20px;
-        padding: 20px;
+    .contactoesp{
+        div{
+            h2{
+                margin: 20px;
+                padding: 20px;
+            }
+        }
     }
-    .contactoesp div form{
-        margin: 20px;
+    .contactoesp{
+        div{
+            form{
+                margin: 20px;
+            }
+        }
     }
-    .mensaje input {
-        width: 200px;
-        height: 100px;
+    .mensaje{
+        input{
+            width: 200px;
+            height: 100px;
+        }
     }
 }
 
 /*?--MEDIAS Q Regvendimia --*/ 
 @media screen and (max-width:1200px){
-    .regvendimia1 div img{
-        width: 300px;
+    .regvendimia1{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
-    .regvendimia1 div img{
-        width: 300px;
+    .regvendimia1{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
-    .regvendimia1 div img{
-        width: 300px;
+    .regvendimia1{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
     .notshow{
         display: none;
     }
 }
 @media screen and (max-width:850px){
-    .regvendimia1 {
+    .regvendimia1{
         flex-direction: column;
     }
     .imgcolores{
         display: none;
     }
-    .regvendimia2 {
+    .regvendimia2{
         flex-direction: column;
     }
-    .regvendimia3 {
+    .regvendimia3{
         flex-direction: column;
     }
 }
 @media screen and (max-width:540px){
-    .regvendimia3 div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px;
-        margin: 20px;
+    .regvendimia3{
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+            margin: 20px;
+        }
     }
 }
 
@@ -296,15 +409,23 @@
     .pagrecibimos{
         flex-direction: column;
     }
-    .pagrecibimos div img {
-        width: 300px;
+    .pagrecibimos{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
 }
 
 /*?--MEDIAS Q Reservasgyv --*/ 
 @media screen and (max-width:1075px){
-    .contactoesp div img{
-        width: 300px;
+    .contactoesp{
+        div{
+            img{
+                width: 300px;
+            }
+        }
     }
     .contactoesp{ 
         margin: 10px;
@@ -322,9 +443,7 @@
     .imgvendimia{
         display: none;
     }
-    .listafoot2{
-        display: none;
-    }  
+
     .parrafonuestra2{
         display: none;
     }
@@ -340,45 +459,78 @@
         margin: 10px;
     }
     
-    .hero div img {
-        height: 300px;
-        margin: 10px;
+    .hero{
+        div{
+            img{
+                height: 300px;
+                margin: 10px;
+            }
+        }
     }
 
-    .tarjetas {
+    .tarjetas{
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
-    .tarjetas div img {
-        margin: 20px;
-        height: 300px;
-        padding: 10px;
+    .tarjetas{
+        div{
+            img{
+                margin: 20px;
+                height: 300px;
+                padding: 10px;
+            }
+        }
     }
 }   
 
 /*?--MEDIAS Q FAQ --*/ 
 @media screen and (max-width:650px){
-    .faq1 div p{
-        font-size: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .faq1{
+        div{
+            p{
+                font-size: 10px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
     }
-    .faq1 div h2{
-        font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .faq1{
+        div{
+            h2{
+                font-size: 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
     }
-    .faq2 div ol li{
-        font-size: 10px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .faq2{
+        div{
+            ol{
+                li{
+                    font-size: 10px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+        }
     }
-    .faq2 div ol p{
-        font-size: 10px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .faq2{
+        div{
+            ol{
+                p{
+                    font-size: 10px;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                }
+            }
+        }
     }
-    .faq2 div h2{
-        font-size: 15px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .faq2{
+        div{
+            h2{
+                font-size: 15px;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
     }
+}
 }

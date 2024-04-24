@@ -31,7 +31,9 @@ header{
     margin: 10px;
     padding: 3px;
 }
-.navbar-nav a{
-    color: white;
-    display: flex;
+.navbar-nav{
+    a{
+        color: white;
+        display: flex;
+    }
 }

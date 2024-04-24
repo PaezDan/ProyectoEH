@@ -133,21 +133,21 @@ header {
 footer {
   background-color: black;
   border-radius: 20px;
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 5px;
   flex-wrap: wrap; }
   footer div {
     display: flex;
     align-items: center;
     justify-content: space-around;
     list-style: none;
-    margin: 10px;
-    padding: 10px; }
+    margin: 5px;
+    padding: 5px; }
     footer div div a img {
       width: 200px;
       height: 200px; }
     footer div div ul li {
-      margin: 20px; }
+      margin: 5px; }
       footer div div ul li a {
         color: white;
         text-decoration: none;
@@ -213,7 +213,7 @@ footer {
 
 .terroir2 p {
   margin: 40px;
-  padding: 30px; }
+  adding: 30px; }
 
 .terroir3 {
   display: flex;
@@ -223,7 +223,7 @@ footer {
   flex-direction: row-reverse; }
 
 .terroir3 h2 {
-  font-size: 50px;
+  ont-size: 50px;
   margin: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
@@ -471,11 +471,13 @@ footer {
   .gridho2 {
     grid-column-start: 1;
     grid-column-end: 3; }
+  .mapgal {
+    display: none; }
   .ho1 img {
     height: 300px;
     width: 500px; } }
 
-@media screen and (max-width: 1037px) {
+@media screen and (max-width: 1160px) and (max-width: 1037px) {
   .grid-container {
     border: solid 4px black;
     margin: 5px;
@@ -501,10 +503,10 @@ footer {
   .ho1 img {
     height: 300px;
     width: 500px; }
-  .mapgal {
+  .listafoot2 {
     display: none; } }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1160px) and (max-width: 730px) {
   .grid-container {
     border: solid 4px black;
     margin: 5px;
@@ -529,11 +531,13 @@ footer {
     grid-column-end: 2; }
   .ho1 img {
     height: 150px;
-    width: 250px; }
-  .mapgal {
+    width: 250px; } }
+
+@media screen and (max-width: 1160px) and (max-width: 700px) {
+  .logofooter {
     display: none; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1160px) and (max-width: 540px) {
   header div h1 {
     font-size: 30px; }
   .hero div h2 {
@@ -552,15 +556,20 @@ footer {
     font-size: 15px; }
   .vendimia div a {
     font-size: 10px; }
-  .logofooter {
-    display: none; }
+  .lista1 {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column; }
   .grid-container {
     grid-template-rows: 1fr;
     grid-template-columns: 340px;
     gap: 20px; } }
 
-/*?--MEDIAS Q Nosotros --*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Nosotros --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 850px) {
   .nuestra {
     display: flex;
     align-items: center;
@@ -572,15 +581,17 @@ footer {
     justify-content: space-evenly;
     flex-direction: column; } }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1160px) and (max-width: 580px) {
   .nuestra div img {
     width: 300px; }
   .dondevamos div img {
     width: 300px;
     margin: 20px; } }
 
-/*?--MEDIAS Q Terroir --*/
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Terroir --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 950px) {
   .terroir1 {
     display: flex;
     align-items: center;
@@ -600,7 +611,7 @@ footer {
     margin: 20px;
     flex-direction: column; } }
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 1160px) and (max-width: 610px) {
   .terroir1 img {
     width: 300px; }
   .terroir2 img {
@@ -608,8 +619,10 @@ footer {
   .terroir3 img {
     width: 300px; } }
 
-/*?--MEDIAS Q Contacto --*/
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Contacto --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 860px) {
   .contactoesp {
     flex-direction: column; }
   .contactoesp div form div {
@@ -626,8 +639,10 @@ footer {
     width: 200px;
     height: 100px; } }
 
-/*?--MEDIAS Q Regvendimia --*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Regvendimia --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 1200px) {
   .regvendimia1 div img {
     width: 300px; }
   .regvendimia1 div img {
@@ -637,7 +652,7 @@ footer {
   .notshow {
     display: none; } }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1160px) and (max-width: 850px) {
   .regvendimia1 {
     flex-direction: column; }
   .imgcolores {
@@ -647,7 +662,7 @@ footer {
   .regvendimia3 {
     flex-direction: column; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1160px) and (max-width: 540px) {
   .regvendimia3 div {
     display: flex;
     align-items: center;
@@ -655,34 +670,38 @@ footer {
     padding: 10px;
     margin: 20px; } }
 
-/*?--MEDIAS Q Recibimos --*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Recibimos --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 720px) {
   .pagrecibimos {
     flex-direction: column; }
   .pagrecibimos div img {
     width: 300px; } }
 
-/*?--MEDIAS Q Reservasgyv --*/
-@media screen and (max-width: 1075px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q Reservasgyv --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 1075px) {
   .contactoesp div img {
     width: 300px; }
   .contactoesp {
     margin: 10px; } }
 
-/*?--MEDIAS Q INDEX --*/
-@media screen and (max-width: 981px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q INDEX --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 981px) {
   .mapa {
     display: none; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1160px) and (max-width: 800px) {
   .imgvendimia {
-    display: none; }
-  .listafoot2 {
     display: none; }
   .parrafonuestra2 {
     display: none; } }
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 1160px) and (max-width: 732px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -704,8 +723,10 @@ footer {
     height: 300px;
     padding: 10px; } }
 
-/*?--MEDIAS Q FAQ --*/
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1160px) {
+  /*?--MEDIAS Q FAQ --*/ }
+
+@media screen and (max-width: 1160px) and (max-width: 650px) {
   .faq1 div p {
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
