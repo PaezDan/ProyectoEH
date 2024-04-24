@@ -8,6 +8,9 @@
             height: 400px;
             margin: 10px;
         }
+        a{
+            @include botonempty;
+        }
     }
 }
 
@@ -27,11 +30,7 @@
     a{
         font-size: 20px;
         margin: 5px;
-        padding: 5px;
-        border-radius: 15px;
-        border: 1px solid rgb(0, 0, 0);
-        background-color: black;
-        color: white;
+        color: black;
         text-decoration: none;
     }
 }
@@ -65,20 +64,17 @@
             padding: 10px;
         }
         li{
-            a{
-                font-size: 15px;
-                margin: 5px;
-                padding: 5px;
-                text-decoration: none;
-                border-radius: 15px;
-                border: 1px solid rgb(0, 0, 0);
-                background-color: black;
-                color: white;
-                text-decoration: none;
+        @include botonempty;
+            a {
+            font-size: 20px;
+            margin: 20px;
+            text-decoration: none;
+            color: black;
             }
         }
     }
 }
+
 .vendimia{
     display: flex;
     justify-content: space-between ;
@@ -96,17 +92,16 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
         a{
+            @include botonempty;
             font-size: 20px;
-            margin: 5px;
-            padding: 10px;
-            border-radius: 15px;
-            border: 1px solid rgb(0, 0, 0);
+            margin: 20px;
             text-decoration: none;
-            color: white;
-            background-color: black;
+            color: black;
         }
+        
     }
 }
+
 
 .imgvendimia{
     margin: 5px;
