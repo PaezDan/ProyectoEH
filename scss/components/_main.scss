@@ -7,6 +7,9 @@
         img{
             height: 400px;
             margin: 10px;
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
         }
         a{
             @include botonempty;
@@ -52,6 +55,9 @@
         list-style: none;
         text-decoration: none;
         margin: 10px;
+        box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
         h2{
             font-size: 30px;
             margin: 5px;
@@ -106,4 +112,7 @@
 .imgvendimia{
     margin: 5px;
     padding: 10px;
+    box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
 }

@@ -101,30 +101,20 @@
 
 .faq1 {
     display: inline-block;
-    margin: 50px;
 }
 
 .faq1{
     div{
-        border-radius: 40px;
-        border: 1px solid rgb(0, 0, 0); height: 300; width: 300;
-        padding: 50px;
-        Margin: 40px;
-        padding: 20px;
+        padding: 10px;
+        Margin: 10px;
     }
 }
 
 .faq2 {
-    border-radius: 40px;
-    border: 1px solid rgb(0, 0, 0); 
-    padding: 20px;
-    Margin: 30px;
+    padding: 10px;
+    Margin: 10px;
 }
-.faq2{
-    div{
-        margin: 50px;
-    }
-}
+
 
 // ESPECIFICO TIENDA
 
@@ -148,6 +138,9 @@
         text-decoration: none;
         border-radius: 40px;
         flex-wrap: wrap;
+        box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
         h2{
             margin: 20px;
             font-size: 30px;
@@ -363,6 +356,9 @@
     padding: 20px;
     text-align: center;
     margin: 10px;
+    box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
 }
 
 .galeria1{
