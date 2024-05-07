@@ -209,6 +209,10 @@ footer {
 .nuestra {
   flex-direction: row-reverse;
   margin: 10px; }
+  .nuestra div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
   .nuestra div h2 {
     font-size: 50px;
     margin-left: 30px;
@@ -219,6 +223,10 @@ footer {
 
 .dondevamos {
   margin: 10px; }
+  .dondevamos div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
   .dondevamos div h2 {
     font-size: 50px;
     margin-left: 30px;
@@ -230,40 +238,46 @@ footer {
 .terroir1 {
   flex-direction: row-reverse;
   margin: 20px; }
-
-.terroir1 h2 {
-  font-size: 50px;
-  margin: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-.terroir1 p {
-  margin: 20px;
-  padding: 15px; }
+  .terroir1 div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
+  .terroir1 h2 {
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  .terroir1 p {
+    margin: 20px;
+    padding: 15px; }
 
 .terroir2 {
   margin: 20px; }
-
-.terroir2 h2 {
-  font-size: 50px;
-  margin: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-.terroir2 p {
-  margin: 20px;
-  padding: 15px; }
+  .terroir2 div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
+  .terroir2 h2 {
+    font-size: 50px;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  .terroir2 p {
+    margin: 20px;
+    padding: 15px; }
 
 .terroir3 {
   margin: 20px;
   flex-direction: row-reverse; }
-
-.terroir3 h2 {
-  font-size: 50px;
-  margin: 10px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
-
-.terroir3 p {
-  margin: 20px;
-  padding: 15px; }
+  .terroir3 div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
+  .terroir3 h2 {
+    font-size: 50px;
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  .terroir3 p {
+    margin: 20px;
+    padding: 15px; }
 
 .faq1 {
   display: inline-block; }
@@ -339,6 +353,10 @@ footer {
 
 .contactoesp div {
   margin: 10px; }
+  .contactoesp div img {
+    box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -webkit-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 13px 17px 22px -3px rgba(0, 0, 0, 0.71); }
 
 .mensaje input {
   width: 400px;

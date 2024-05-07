@@ -5,6 +5,13 @@
     flex-direction: row-reverse;
     margin: 10px;
     div{
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
+    }
+    div{
         h2{
             font-size: 50px;
             margin-left: 30px;
@@ -20,6 +27,13 @@
 .dondevamos{
     @extend %flexcenter;
     margin: 10px;
+    div{
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
+    }
     div{
         h2{
             font-size: 50px;
@@ -39,17 +53,18 @@
     @extend %flexcenter;
     flex-direction: row-reverse;
     margin: 20px;
-}
-
-.terroir1{
+    div{
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
+    }
     h2{
         font-size: 50px;
         margin: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-}
-
-.terroir1{
     p {
         margin: 20px;
         padding: 15px;
@@ -59,17 +74,18 @@
 .terroir2 {
     @extend %flexcenter;
     margin: 20px;
-}
-
-.terroir2{
+    div{
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
+    }
     h2{
         font-size: 50px;
         margin: 20px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-}
-
-.terroir2{
     p{
         margin: 20px;
         padding: 15px;
@@ -80,22 +96,24 @@
     @extend %flexcenter;
     margin: 20px;
     flex-direction: row-reverse;
-}
-
-.terroir3{
+    div{
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
+    }
     h2{
         font-size: 50px;
         margin: 10px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-}
-
-.terroir3{
     p{
         margin: 20px;
         padding: 15px;
     }
 }
+
 
 // ESPECIFICO FAQ
 
@@ -195,6 +213,11 @@
 .contactoesp{
     div{
         margin: 10px;
+        img{
+            box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -webkit-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+            -moz-box-shadow: 13px 17px 22px -3px rgba(0,0,0,0.71);
+        }
     }
 }
 
