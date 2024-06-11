@@ -15,14 +15,55 @@
  * 8. Credo Semillon = 5000$
  * 9. Credo Malbec = 5000$
  * 0. SALIR
+ * 10. No Deseo realizar una compra
  * 
  * IF not 18= No podes Comprar
  */
 
 let carrito = 0
 let option;
-let lista = " Detalle: ";
+let lista = "\nDetalle: ";
 let cnt = 0
+
+function vino(nombre, tipo, stock, anio, precio) {
+    this.nombre = nombre;
+    this.tipo = tipo;
+    this.stock = stock;
+    this.anio = anio;
+    this.precio = precio;
+}
+
+const vino1 = new vino("Malvasia", "Blanco", 20, 2024, 1000);
+const vino2 = new vino("Begquinol", "Blanco", 15, 2023, 1000);
+const vino3 = new vino("Rose", "Rosado", 50, 2023, 1000);
+const vino4 = new vino("Liv. Malbec", "Tinto", 10, 2022, 1000);
+const vino5 = new vino("Electrico", "Blanco", 30, 2022, 2000);
+const vino6 = new vino("Vertebrado", "Tinto", 17, 2021, 2000);
+const vino7 = new vino("Parcela", "Tinto", 8, 2021, 3000);
+const vino8 = new vino("Credo Semillon", "Blanco", 10, 2019, 5000);
+const vino9 = new vino("Credo Malbec", "Tinto", 5, 2020, 5000);
+
+const vinos = [vino1, vino2, vino3, vino4, vino5, vino6, vino7, vino8, vino9];
+
+let comprador = {
+
+}
+
+//Mostrar el detalle de los vinos en el Array // 
+console.log(vinos);
+
+//Mostrar el tipo de cada vino //
+console.log(vino1.nombre + " es un " + vino1.tipo);
+console.log(vino2.nombre + " es un " + vino2.tipo);
+console.log(vino3.nombre + " es un " + vino3.tipo);
+console.log(vino4.nombre + " es un " + vino4.tipo);
+console.log(vino5.nombre + " es un " + vino5.tipo);
+console.log(vino6.nombre + " es un " + vino6.tipo);
+console.log(vino7.nombre + " es un " + vino7.tipo);
+console.log(vino8.nombre + " es un " + vino8.tipo);
+console.log(vino9.nombre + " es un " + vino9.tipo);
+
+
 function agregar(x) {
     carrito = carrito + x
 }
@@ -30,7 +71,8 @@ function suma() {
     cnt = cnt + 1
 }
 
-let permiso = Number(prompt("Ingresa tu edad: "));
+let permiso =  prompt ("Ingresa tu edad: ");
+comprador.mail = prompt ("Ingrese su correo electronico: ");
 if (permiso >=18){
     while (option !=0){
         let compra = prompt(`
@@ -44,74 +86,140 @@ if (permiso >=18){
         7. Parcela = 3000$
         8. Credo Semillon = 5000$
         9. Credo Malbec = 5000$
-        0. FINALIZAR
+        0. Finalizar compra.
+        10. No deseo comprar nada.
         `)
         switch (compra){
             case '1':
-            agregar (1000)
+            agregar (vino1.precio)
             suma ()
-            lista = lista + " Malvasia x1,"
-            alert("Agregaste Malvasia a tu compra, tu carrito es de: $" + carrito)
+            lista = lista + "\n1 x " + vino1.nombre + " " + vino1.anio
+            alert("Agregaste " + vino1.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '2':
-            agregar (1000)
-            lista = lista + " Bequinol x1,"
+            agregar (vino2.precio)
+            lista = lista + "\n1 x " + vino2.nombre + " " + vino2.anio
             suma ()
-            alert("Agregaste Begquinol a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino2.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '3':
-            agregar (1000)
-            lista = lista + " Rose x1,"
+            agregar (vino3.precio)
+            lista = lista + "\n1 x " + vino3.nombre + " " + vino3.anio
             suma ()
-            alert("Agregaste Rose a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino3.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '4':
-            agregar (1000)
-            lista = lista + " Liv. Malbec x1,"
+            agregar (vino4.precio)
+            lista = lista + "\n1 x " + vino4.nombre + " " + vino4.anio
             suma ()
-            alert("Agregaste Liv. malbec a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino4.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '5':
-            agregar (2000)
-            lista = lista + " Electrico x1,"
+            agregar (vino5.precio)
+            lista = lista + "\n1 x " + vino5.nombre + " " + vino5.anio
             suma ()
-            alert("Agregaste Electrico a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino5.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '6':
-            agregar (2000)
-            lista = lista + " Vertebrado x1,"
+            agregar (vino6.precio)
+            lista = lista + "\n1 x " + vino6.nombre + " " + vino6.anio
             suma ()
-            alert("Agregaste Vertebrado a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino6.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '7':
-            agregar (3000)
-            lista = lista + " Parcela x1,"
+            agregar (vino7.precio)
+            lista = lista + "\n1 x " + vino7.nombre + " " + vino7.anio
             suma ()
-            alert("Agregaste Parcela a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino7.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '8':
-            agregar (5000)
-            lista = lista + " Credo Semillon x1,"
+            agregar (vino8.precio)
+            lista = lista + "\n1 x " + vino8.nombre + " " + vino8.anio
             suma ()
-            alert("Agregaste Credo Semillon a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino8.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
             case '9':
-            agregar (5000)
-            lista = lista + " Credo Malbec x1,"
+            agregar (vino9.precio)
+            lista = lista + "\n1 x " + vino9.nombre + " " + vino9.anio
             suma ()
-            alert("Agregaste Credo malbec a tu compra, tu carrito es de: $" + carrito)
+            alert("Agregaste " + vino9.nombre + " a tu compra, tu carrito es de: $ " + carrito)
             break
-            case '0':
-            alert("Finalizaste tu compra, tu carrito es de: $ " + carrito + lista + " - Pronto estaremos realizando su envio." )
-            console.log(`Compraste un total de: ` + cnt + " Vinos,  " +
-            lista + ` - El monto total de tu compra fue de: $ ` + carrito
-            )
-            alert("Muchas gracias por su compra")
+            case '10':
+            alert("Muchas gracias, vuelva pronto!!")
             option = 0;
             break
+            case '0':
+            alert("Finalizaste tu compra, procederemos a pedir tus datos para el envío.");
+            comprador.nombre = prompt ("Ingrese su nombre completo: ");
+            comprador.direccion = prompt ("Ingrese su dirección: ");
+            comprador.postalcode = prompt ("Ingrese su código postal: ");
+            comprador.dni = prompt ("Ingrese su DNI: ");
+            alert("Verifique a continuación los datos de su compra: " 
+            + "\nRecibe: " + comprador.nombre
+            + "\nEn: " + comprador.direccion
+            + "\nCodigo Postal: " + comprador.postalcode
+            + "\nDni: " + comprador.dni
+            + "\nTotal de compra: " + carrito + lista + "\nUn total: " + cnt + " vino/s"
+            + "\nFecha de registro: " + new Date
+            )
+            let confirmo = prompt  (`
+            1. Los datos están correctos.
+            2. Los datos son incorrectos.
+            0. Me arrepiento de la compra, salir.
+            `)
+            while (confirmo !=0){
+                switch (confirmo){
+                    case '1':
+                    alert("Gracias por confirmar su compra, enviaremos todos los datos para realizar el pago a su correo: " + comprador.mail
+                    )
+                    confirmo = 0;
+                    console.log("Compra finalizada, detalle: " 
+                        + "\nRecibe: " + comprador.nombre
+                        + "\nEn: " + comprador.direccion
+                        + "\nCodigo Postal: " + comprador.postalcode
+                        + "\nDni: " + comprador.dni
+                        + "\nTotal de compra: " + carrito + lista + "\nUn total: " + cnt + " vino/s"
+                        + "\nFecha de registro: " + new Date
+                        );
+                    break
+                    case '2':
+                    alert("Reingrese sus datos correctamente: ")
+                    comprador.nombre = prompt ("Ingrese su nombre completo: ");
+                    comprador.direccion = prompt ("Ingrese su dirección: ");
+                    comprador.postalcode = prompt ("Ingrese su código postal: ");
+                    comprador.dni = prompt ("Ingrese su DNI: ");
+                    alert("Verifique a continuación los datos de su compra: " 
+                    + "\nRecibe: " + comprador.nombre
+                    + "\nEn: " + comprador.direccion
+                    + "\nCodigo Postal: " + comprador.postalcode
+                    + "\nDni: " + comprador.dni
+                    + "\nTotal de compra: " + carrito + lista + "\nUn total:  " + cnt + " vino/s"
+                    + "\nFecha de registro: " + new Date
+                    )
+                    confirmo = prompt (`
+                    1. Los datos están correctos.
+                    2. Los datos son incorrectos.
+                    0. Me arrepiento de la compra, salir.
+                    `)
+                    console.log("Compra finalizada, detalle: " 
+                        + "\nRecibe: " + comprador.nombre
+                        + "\nEn: " + comprador.direccion
+                        + "\nCodigo Postal: " + comprador.postalcode
+                        + "\nDni: " + comprador.dni
+                        + "\nTotal de compra: " + carrito + lista + "\nUn total: " + cnt + " vino/s"
+                        + "\nFecha de registro: " + new Date
+                        );
+                    break
+                    case '0':
+                    alert("Gracias, vuelva pronto!")
+                }
+            }
+        option = 0;
+        break
         }
     }
 } else{
     alert("Lo sentimos, no tienes edad para comprar")
     console.log("Lo sentimos, no tienes edad para comprar")
 }
+
