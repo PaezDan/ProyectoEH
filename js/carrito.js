@@ -1,8 +1,8 @@
 
 
 let lista = "\nDetalle: ";
-let carrito = 0
 let cnt = 0
+let carrito = 0;
 
 
 // CHEQUEAR QUE EL CARRITO ESTE VACIO //
@@ -17,14 +17,18 @@ function restore(safeitems) {
         const itemsArray = JSON.parse(safeitems);
         itemsArray.forEach(item => {
             checkOutItems.push(item);
+            carrito = carrito + item.precio
         });
         cuenta = JSON.parse(safeitems);
         cuenta.forEach(item => {
             cnt = cnt + 1 
         });
+
     }
 }
 restore(safeitems);
+
+localStorage.clear();
 
 
 // creando los vinos // 
@@ -66,6 +70,7 @@ agregadoAcarrito.innerText = cnt
 function agregarcheckout (x) {
     checkOutItems.push(x)
 }
+
 
 
 // AGREGAR AL CARRITO //
@@ -192,6 +197,7 @@ iracheckout.onclick = ('submit', (event) => {
     console.log("Compra finalizada, detalle: " 
         + "\nTotal de compra: " + carrito + lista + "\nUn total: " + cnt + " vino/s"
         + "\nFecha de registro: " + new Date);
+
     console.log(checkOutItems);
     localStorage.setItem('items', JSON.stringify(checkOutItems));
     localStorage.setItem('cnt',JSON.stringify(cnt));
