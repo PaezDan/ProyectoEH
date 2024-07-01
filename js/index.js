@@ -20,6 +20,8 @@
  * IF not 18= No podes Comprar
  */
 
+
+
 let carrito = 0
 let option;
 let lista = "\nDetalle: ";

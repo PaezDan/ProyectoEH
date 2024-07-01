@@ -354,7 +354,7 @@ footer div div ul li {
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 10px;
-}
+} */
 
 .listaproductos li a {
     text-decoration: none;
@@ -368,6 +368,7 @@ footer div div ul li {
     border: 5px solid rgb(0, 0, 0);
     margin: 10px;
 }
+
 
 .listaproductos h2 {
     margin: 20px;
