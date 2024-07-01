@@ -1,9 +1,30 @@
 
 
 let lista = "\nDetalle: ";
-let cnt = 0
 let carrito = 0
-let checkOutItems = [ ];
+let cnt = 0
+
+
+// CHEQUEAR QUE EL CARRITO ESTE VACIO //
+
+const safeitems = localStorage.getItem('items');
+console.log('safe', safeitems);
+
+const checkOutItems = [];
+
+function restore(safeitems) {
+    if (safeitems) {
+        const itemsArray = JSON.parse(safeitems);
+        itemsArray.forEach(item => {
+            checkOutItems.push(item);
+        });
+        cuenta = JSON.parse(safeitems);
+        cuenta.forEach(item => {
+            cnt = cnt + 1 
+        });
+    }
+}
+restore(safeitems);
 
 
 // creando los vinos // 
@@ -39,6 +60,8 @@ function suma() {
 }
 
 const agregadoAcarrito = document.getElementById('catidadCarrito')
+
+agregadoAcarrito.innerText = cnt
 
 function agregarcheckout (x) {
     checkOutItems.push(x)
