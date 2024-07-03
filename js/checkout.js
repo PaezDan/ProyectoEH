@@ -1,5 +1,8 @@
 let check = [];
-let precio = [];
+let cnt = 0;
+let total = 0;
+
+// Traer Carrito y crear los items para visualizar //
 
 const storedItems = localStorage.getItem('items');
 console.log('Stored Items:', storedItems);
@@ -14,61 +17,69 @@ if (!carritoContainer) {
     console.error('Carrito container not found!');
 }
 
-let idCounter = 0; 
 
 for (let vino of check) {
     console.log('Processing vino:', vino); 
-    let placeCarrito = document.createElement('article');
-    placeCarrito.id = `${idCounter++}`
-
-    console.log(check);
-    placeCarrito.innerHTML = `
-    <div class="vinoart">
-        <p>${vino.nombre}  </p>
-        <p>Tipo: ${vino.tipo}  </p>
-        <p>Año: ${vino.anio}  </p>
-        <p class="precio${placeCarrito.id}">Precio: ${vino.precio}</p>
-        <button type="submit" id="${placeCarrito.id}" class="botonh2 borrar">borrar</button>
-    </div>
-    `;
-    carritoContainer.appendChild(placeCarrito);
+    cnt = cnt + vino.qty;
+    if (vino.qty > 0) {
+        let placeCarrito = document.createElement('article');
+        placeCarrito.id = vino.id
+        total = total + (vino.precio * vino.qty);
+        console.log(check);
+        placeCarrito.innerHTML = `
+        <div class="vinoart">
+            <p>${vino.nombre}  </p>
+            <p> ${vino.anio}  </p>
+            <div class="qty">
+            <button type="submit"><i class="fi fi-rs-minus-small"></i></i></button>
+            <span>${vino.qty}</span>
+            <button type="submit"><i class="fi fi-rs-plus-small"></i></button>
+            </div>
+            <p class="precio${placeCarrito.id}">     $:${(vino.precio * vino.qty)} </p>
+            <button type="submit" id="${vino.id}" class="borrar"><i class="fi fi-rs-trash"></i></button>
+        </div>
+        `;
+        carritoContainer.appendChild(placeCarrito);
+    }
 }
 
-
-let cnt = check.length 
+// Mostrar cnt y price // 
 const cntplace1 = document.getElementById('cntplace')
 cntplace1.innerText = cnt
 
-
-let sumaTotal = check.reduce((acumulador, producto) => acumulador + (producto.precio || 0), 0);
-console.log(sumaTotal);
-let total = sumaTotal;
 const total1 = document.getElementById('total')
 total1.innerText = total
 
+console.log (check);
 //funcion para actualizar price // 
 
-function actualizaPrice () {
-    sumaTotal = check.reduce((acumulador, producto) => acumulador + (producto.precio || 0), 0);
-    total = sumaTotal
-    total1.innerText = total
-}
+
 
 // luego de mostrar todo //
-// BORRAR ELEMENTOS //
+
+//BORRAR 1 O MAS - O SUMAR 1 O MAS //
+
+
+
+// BORRAR TODO EL ELEMENTO //
 
 const borrarElemnto = document.querySelectorAll('.borrar')
-
 borrarElemnto.forEach(boton => {
     boton.addEventListener('click', function() {
     const eliminaa = this.getAttribute('id');
-    console.log(eliminaa);
     const eliminado = document.getElementById(eliminaa)
     eliminado.remove();
-    check.splice(eliminaa,1)
-    actualizaPrice ()
-    cnt= cnt - 1;
-    cntplace1.innerText = cnt;
+    check.forEach(e => {
+        if (e.id == eliminaa){
+            cnt = cnt - e.qty;
+            cntplace1.innerText = cnt;
+            total= total - (e.precio * e.qty);
+            total1.innerText = total;
+        };
+    });
+
+
+    
     });
 });
 

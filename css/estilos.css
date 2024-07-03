@@ -53,10 +53,25 @@ body {
 
 .vinoart button {
   border-radius: 40px;
-  border: 1px solid orange;
-  margin: 4px;
-  padding: 4px;
+  background-color: gainsboro;
+  border: 1px solid black;
+  margin: 1px;
+  padding: 1px;
   font-size: 12px; }
+  .vinoart button :hover {
+    background-color: gray;
+    color: red; }
+
+.vinoart .qty {
+  padding: 3px;
+  margin-right: 5px;
+  margin: 5px; }
+
+.vinoart .qty span {
+  border-radius: 40px;
+  border: 1px solid black;
+  padding: 3px;
+  font-size: 10px; }
 
 header {
   background-color: black;

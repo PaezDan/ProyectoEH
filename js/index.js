@@ -1,4 +1,4 @@
-// CARRITO DE COMPRAS PARA EH 
+// CARRITO DE COMPRAS PARA EH -- Archivo inutilizado
 
 /**
  * MENSAJE INICIAL - Ingresa tu edad para comprar
