@@ -31,11 +31,11 @@ for (let vino of check) {
             <p>${vino.nombre}  </p>
             <p> ${vino.anio}  </p>
             <div class="qty">
-            <button type="submit"><i class="fi fi-rs-minus-small"></i></i></button>
-            <span>${vino.qty}</span>
-            <button type="submit"><i class="fi fi-rs-plus-small"></i></button>
+            <button type="submit" class="menos" id="${vino.id}"><i class="fi fi-rs-minus-small"></i></i></button>
+            <span id="qty${vino.id}"> ${vino.qty} </span>
+            <button type="submit" class="mas" id="${vino.id}"><i class="fi fi-rs-plus-small"></i></button>
             </div>
-            <p class="precio${placeCarrito.id}">     $:${(vino.precio * vino.qty)} </p>
+            <p id="precio${vino.id}"> $: ${(vino.precio * vino.qty)} </p>
             <button type="submit" id="${vino.id}" class="borrar"><i class="fi fi-rs-trash"></i></button>
         </div>
         `;
@@ -59,7 +59,56 @@ console.log (check);
 
 //BORRAR 1 O MAS - O SUMAR 1 O MAS //
 
+//Borrar de a 1
 
+
+const disminuirElemnto = document.querySelectorAll('.menos')
+disminuirElemnto.forEach(boton => {
+    boton.addEventListener('click', function() {
+    const menos = this.getAttribute('id');
+    console.log(menos);
+    check.forEach(e => {
+        if (e.id == menos){
+            if (e.qty > 0) {
+                e.qty = e.qty - 1;
+                const menosqty = document.getElementById('qty'+menos);
+                menosqty.innerText = e.qty;
+                const menosprecio = document.getElementById('precio'+menos);
+                menosprecio.innerText = '$: ' + e.precio * e.qty;
+                cnt = cnt - 1;
+                cntplace1.innerText = cnt;
+                total = total - (e.precio);
+                total1.innerText = total;
+            } else modqty.innerText = 0;
+        };
+    });
+    });
+});
+
+//Sumar de a 1 //
+
+const aumentarElemento = document.querySelectorAll('.mas')
+aumentarElemento.forEach(boton => {
+    boton.addEventListener('click', function() {
+    const mas = this.getAttribute('id');
+    console.log(mas);
+    check.forEach(e => {
+        if (e.id == mas){
+            if (e.qty > -1) {
+                e.qty = e.qty + 1;
+                const masqty = document.getElementById('qty'+mas);
+                masqty.innerText = e.qty;
+                const masprecio = document.getElementById('precio'+mas);
+                masprecio.innerText = '$: ' + e.precio * e.qty;
+                cnt = cnt + 1;
+                cntplace1.innerText = cnt;
+                total = total + (e.precio);
+                total1.innerText = total;
+            } 
+        };
+    });
+    });
+});
 
 // BORRAR TODO EL ELEMENTO //
 
@@ -77,9 +126,6 @@ borrarElemnto.forEach(boton => {
             total1.innerText = total;
         };
     });
-
-
-    
     });
 });
 
@@ -109,10 +155,3 @@ localStorage.setItem('items', JSON.stringify(check));
 continuar.onclick = ('submit', (event) => {
     window.location.href = '../pages/finalizar.html'
 });
-
-
-
-
-
-
-
