@@ -1,0 +1,127 @@
+[
+    {
+        "provincia": "Capital Federal",
+        "startID": 1000,
+        "endID": 1499
+    },
+    {
+        "provincia": "Buenos Aires",
+        "startID": 1601,
+        "endID": 1999
+    },
+    {
+        "provincia": "Buenos Aires",
+        "startID": 6000,
+        "endID": 6999
+    },
+    {
+        "provincia": "Catamarca",
+        "startID": 4700,
+        "endID": 4749
+    },
+    {
+        "provincia": "Chaco",
+        "startID": 3500,
+        "endID": 3709
+    },
+    {
+        "provincia": "Chubut",
+        "startID": 9000,
+        "endID": 9201
+    },
+    {
+        "provincia": "Córdoba",
+        "startID": 5000,
+        "endID": 5899
+    },
+    {
+        "provincia": "Corrientes",
+        "startID": 3400,
+        "endID": 3499
+    },
+    {
+        "provincia": "Entre Ríos",
+        "startID": 3100,
+        "endID": 3299
+    },
+    {
+        "provincia": "Formosa",
+        "startID": 3600,
+        "endID": 3639
+    },
+    {
+        "provincia": "Jujuy",
+        "startID": 4600,
+        "endID": 4750
+    },
+    {
+        "provincia": "La Pampa",
+        "startID": 6300,
+        "endID": 6399
+    },
+    {
+        "provincia": "La Rioja",
+        "startID": 5300,
+        "endID": 5389
+    },
+    {
+        "provincia": "Mendoza",
+        "startID": 5500,
+        "endID": 5599
+    },
+    {
+        "provincia": "Misiones",
+        "startID": 3300,
+        "endID": 3389
+    },
+    {
+        "provincia": "Neuquén",
+        "startID": 8300,
+        "endID": 8359
+    },
+    {
+        "provincia": "Río Negro",
+        "startID": 8100,
+        "endID": 8499
+    },
+    {
+        "provincia": "Salta",
+        "startID": 4400,
+        "endID": 4650
+    },
+    {
+        "provincia": "San Juan",
+        "startID": 5400,
+        "endID": 5419
+    },
+    {
+        "provincia": "San Luis",
+        "startID": 5700,
+        "endID": 5839
+    },
+    {
+        "provincia": "Santa Cruz",
+        "startID": 9400,
+        "endID": 9409
+    },
+    {
+        "provincia": "Santa Fe",
+        "startID": 2000,
+        "endID": 3029
+    },
+    {
+        "provincia": "Santiago del Estero",
+        "startID": 4200,
+        "endID": 4319
+    },
+    {
+        "provincia": "Tierra del Fuego",
+        "startID": 9410,
+        "endID": 9411
+    },
+    {
+        "provincia": "Tucumán",
+        "startID": 4000,
+        "endID": 4242
+    }
+]

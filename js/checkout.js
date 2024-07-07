@@ -9,6 +9,7 @@ console.log('Stored Items:', storedItems);
 
 if (storedItems) {
     check = JSON.parse(storedItems);
+    localStorage.clear();
 }
 console.log('Parsed Items:', check);
 
@@ -16,7 +17,6 @@ const carritoContainer = document.getElementById('carrito-container');
 if (!carritoContainer) {
     console.error('Carrito container not found!');
 }
-
 
 for (let vino of check) {
     console.log('Processing vino:', vino); 
@@ -152,6 +152,7 @@ editar.onclick = ('submit', (event) => {
 
 const continuar = document.getElementById('continuar');
 localStorage.setItem('items', JSON.stringify(check));
+
 continuar.onclick = ('submit', (event) => {
     window.location.href = '../pages/finalizar.html'
 });
