@@ -5,6 +5,8 @@ let total = 0;
 let detalle = "Detalle: ";
 let costoEnvio = 0;
 let totalConEnvio = 0;
+let compraConfirmada = [];
+let comprador = [];
 
 // Traer Carrito y crear los items para visualizar, detallar y contar //
 
@@ -187,11 +189,13 @@ confirmar.onclick = async (e) => {
                 data[key] = value;
             });
             localStorage.clear();
-            let compraConfirmada = [];
-            compraConfirmada.push(total, detalle, costoEnvio, totalConEnvio, pago);
-            localStorage.setItem('dataComprador', JSON.stringify(data));
+            compraConfirmada.push(pago);
+            comprador.push(data);
+            localStorage.setItem('dataComprador', JSON.stringify(comprador));
             localStorage.setItem('datosConfirmados', JSON.stringify(compraConfirmada));
             localStorage.setItem('items', JSON.stringify(check));
+            console.log(comprador);
+            console.log(check);
             window.location.href = '../pages/gracias.html';
         }
     } else {
