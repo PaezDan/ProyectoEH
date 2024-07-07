@@ -1,128 +1,127 @@
 [
     {
         "provincia": "Ciudad Autónoma de Buenos Aires",
-        "startID": 1000,
-        "endID": 1499
+        "id": "02",
+        "precio": 0
     },
     {
         "provincia": "Buenos Aires",
-        "startID": 1601,
-        "endID": 1999
+        "id": "06",
+        "precio": 5000
     },
     {
         "provincia": "Buenos Aires",
-        "startID": 6000,
-        "endID": 6999
+        "id": "06",
+        "precio": 5000
     },
     {
         "provincia": "Catamarca",
-        "startID": 4700,
-        "endID": 4749
+        "id": "10",
+        "precio": 5000
     },
     {
         "provincia": "Chaco",
-        "startID": 3500,
-        "endID": 3709
+        "id": "22",
+        "precio": 5000
     },
     {
         "provincia": "Chubut",
-        "startID": 9000,
-        "endID": 9201
+        "id": "26",
+        "precio": 5000
     },
     {
         "provincia": "Córdoba",
-        "startID": 5000,
-        "endID": 5899
+        "id": "14",
+        "precio": 5000
     },
     {
         "provincia": "Corrientes",
-        "startID": 3400,
-        "endID": 3499
+        "id": "18",
+        "precio": 5000
     },
     {
         "provincia": "Entre Ríos",
-        "startID": 3100,
-        "endID": 3299
+        "id": "30",
+        "precio": 5000
     },
     {
         "provincia": "Formosa",
-        "startID": 3600,
-        "endID": 3639
+        "id": "34",
+        "precio": 5000
     },
     {
         "provincia": "Jujuy",
-        "startID": 4600,
-        "endID": 4750
+        "id": "38",
+        "precio": 10000
     },
     {
         "provincia": "La Pampa",
-        "startID": 6300,
-        "endID": 6399
+        "id": "42",
+        "precio": 10000
     },
     {
         "provincia": "La Rioja",
-        "startID": 5300,
-        "endID": 5389
+        "id": "46",
+        "precio": 5000
     },
     {
         "provincia": "Mendoza",
-        "startID": 5500,
-        "endID": 5599
+        "id": "50",
+        "precio": 0
     },
     {
         "provincia": "Misiones",
-        "startID": 3300,
-        "endID": 3389
+        "id": "54",
+        "precio": 5000
     },
     {
         "provincia": "Neuquén",
-        "startID": 8300,
-        "endID": 8359
+        "id": "58",
+        "precio": 10000
     },
     {
         "provincia": "Río Negro",
-        "startID": 8100,
-        "endID": 8499
+        "id": "62",
+        "precio": 10000
     },
     {
         "provincia": "Salta",
-        "startID": 4400,
-        "endID": 4650
+        "id": "66",
+        "precio": 10000
     },
     {
         "provincia": "San Juan",
-        "startID": 5400,
-        "endID": 5419
+        "id": "70",
+        "precio": 5000
     },
     {
         "provincia": "San Luis",
-        "startID": 5700,
-        "endID": 5839
+        "id": "74",
+        "precio": 5000
     },
     {
         "provincia": "Santa Cruz",
-        "startID": 9400,
-        "endID": 9409
+        "id": "78",
+        "precio": 5000
     },
     {
         "provincia": "Santa Fe",
-        "startID": 2000,
-        "endID": 3029
+        "id": "82",
+        "precio": 5000
     },
     {
         "provincia": "Santiago del Estero",
-        "startID": 4200,
-        "endID": 4319
+        "id": "86",
+        "precio": 5000
     },
     {
         "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
-        "startID": 9410,
-        "endID": 9411
+        "id": "94",
+        "precio": 10000
     },
     {
         "provincia": "Tucumán",
-        "startID": 4000,
-        "endID": 4242
+        "id": "90",
+        "precio": 10000
     }
 ]
-

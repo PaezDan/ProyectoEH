@@ -154,5 +154,7 @@ const continuar = document.getElementById('continuar');
 localStorage.setItem('items', JSON.stringify(check));
 
 continuar.onclick = ('submit', (event) => {
+    localStorage.clear();
+    localStorage.setItem('items', JSON.stringify(check));
     window.location.href = '../pages/finalizar.html'
 });
